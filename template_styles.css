@@ -1,59 +1,63 @@
 /* ----------------- Class CSS ----------------- */
 
-.about{
-    width:400px;
+.about {
+    width: 400px;
     margin: auto;
 }
 
-.about-team{
-    color:rgb(82, 81, 81)
+.about-team {
+    color: rgb(82, 81, 81)
 }
 
-.authors{
+.authors {
     background-color: #dbe3e7;
 }
 
-.body{
+.body {
     background-color: rgb(90, 92, 92);
 }
 
-.footer{
+.footer {
     background-color: #023E8A;
 }
 
-.icon-white{            /* Arrow icon at bottom of page */
+.icon-white {
+    /* Arrow icon at bottom of page */
     color: #FFFFFF;
 }
 
-.nb-background-color{   /* navbar background color */
+.nb-background-color {
+    /* navbar background color */
     background-color: #023E8A;
 }
 
-.nbMenuItem{               /* navbar link text properties */
-    font-size:25px;
+.nbMenuItem {
+    /* navbar link text properties */
+    font-size: 25px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.overview{
+.overview {
     background-color: #dbe3e7;
 }
 
-.ovPadLeft{
+.ovPadLeft {
     padding-left: 20px;
 }
 
-.ovPadRight{  
+.ovPadRight {
     padding-right: 20px;
 }
 
-.procedure{
+.procedure {
     background-color: #dbe3e7;
     padding: 1px;
 }
 
-.showcase{
-    background-color: #8fa3ab; /*#0096c7*/
+.showcase {
+    background-color: #8fa3ab;
+    /*#0096c7*/
 }
 
 /* ----------------- ID CSS ----------------- */
@@ -63,8 +67,8 @@
     display: inline-block;
     position: relative;
     /*color: #0087ca;*/
-  }
-  
+}
+
 .hover-underline-animation:after {
     content: '';
     position: absolute;
@@ -77,7 +81,7 @@
     /*transform-origin: bottom right;*/
     transition: transform 0.35s ease-out;
 }
-  
+
 .hover-underline-animation:hover:after {
     transform: scaleX(1);
     /*transform-origin: bottom left;*/
