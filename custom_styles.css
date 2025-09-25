@@ -6,3 +6,7 @@
 .ov-bullet-pad-left {
     padding-left: 40px;
 }
+
+#procedure-tbl tr td:last-child {
+    width: 25%;
+}

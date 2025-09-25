@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Authors - Shaken Not Stirred - Vibration & Planaria Regeneration</title>
+    <title>Procedure - Shaken Not Stirred - Vibration & Planaria Regeneration</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -22,7 +22,8 @@
             <!-- lg: large breakpoint; navbar-dark: make the bg dark & text light -->
             <div class="container">
                 <a href="index.html" class="navbar-brand">
-                    <img src="img/droplet.png" alt="Logo: Water Droplet" class="d-inline-block align-text-top w-50">
+                    <img src="img/logo.png" alt="Logo: Two Headed Planaria" id="site-icon"
+                        class="d-inline-block align-text-top w-50">
                 </a>
 
                 <!-- Hamburger Icon -->
@@ -35,26 +36,28 @@
                     <!-- Links to hamburger menu button -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a href="authors.html" class="hover-underline-animation nbMenuItem">Authors</a>
+                            <a href="authors.html" class="nav-link hover-underline-animation nbMenuItem">Authors</a>
                         </li>
                         <li class="nav-item">
-                            <a href="procedure.html" class="hover-underline-animation nbMenuItem">Procedure</a>
+                            <a href="procedure.html" class="nav-link hover-underline-animation nbMenuItem">Procedure</a>
                         </li>
                         <li class="nav-item">
-                            <a href="results.html" class="hover-underline-animation nbMenuItem">Results</a>
+                            <a href="results.html" class="nav-link hover-underline-animation nbMenuItem">Results</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- How to use the sensor -->
         <section class="procedure">
             <div class="container">
                 <br>
                 <div class="text-center">
                     <h1>Procedure</h1>
-                    <h2>Using a numbered list, describe your procedure (include pictures)</h2>
+                    <!-- ms-auto, me-auto: center horizontally -->
+                    <h4 class="w-75 ms-auto me-auto"><em>Objective:</em> the effect of the magnitude of vibration during
+                        the planaria’s regeneration period on its speed of regeneration after being cut transversely
+                        </h2>
                 </div>
 
                 <hr><br>
@@ -73,53 +76,67 @@
                             </th>
                         </tr>
                     </thead>
-                    <tbody class="table-group-divider">
+                    <tbody id="procedure-tbl" class="table-group-divider">
                         <tr class="align-middle">
                             <th scope="row" class="table-secondary">
                                 <h3>1</h3>
                             </th> <!-- scope=row: specifies a row header-->
                             <td>
-                                <h3 class="howTo">Start Python Flask server</h3>
+                                <h3 class="howTo">Obtain 24 planaria</h3>
                             </td>
-                            <td class="text-center"><img src="img/python-logo.png" alt="Python logo"></td>
+                            <td class="text-center"><img src="img/planaria-tank-top.png" alt="Basin of planaria"
+                                    class="img-fluid"></td>
                         </tr>
                         <tr class="align-middle">
                             <th scope="row" class="table-secondary">
                                 <h3>2</h3>
                             </th>
                             <td>
-                                <h3 class="howTo">Power circuit on. SR-04/05 transmits data to Nano IoT</h3>
+                                <h3 class="howTo">Cut all planaria into halves, store in pairs in petri dishes</h3>
                             </td>
-                            <td class="text-center"><img src="img/range-finder-tp.png" alt="SR-04 Range Finder"></td>
+                            <td class="text-center"><img src="img/cutting-planaria.png"
+                                    alt="Planaria being cut, put into dishes" class="img-fluid"></td>
                         </tr>
                         <tr class="align-middle">
                             <th scope="row" class="table-secondary">
                                 <h3>3</h3>
                             </th>
                             <td>
-                                <h3 class="howTo">Nano IoT connects to PC via Wi-Fi and sends data to Arduino</h3>
+                                <h3 class="howTo">Measure each planaria half</h3>
                             </td>
-                            <td class="text-center"><img src="img/nano33-iot3.png" alt="Nano 33 IoT"></td>
+                            <td class="text-center"><img src="img/planaria-measure-1.png"
+                                    alt="Petri dish containing planaria on top of ruler" class="img-fluid"></td>
                         </tr>
                         <tr class="align-middle">
                             <th scope="row" class="table-secondary">
                                 <h3>4</h3>
                             </th>
                             <td>
-                                <h3 class="howTo">Arduino and Flask server communicate through HTTP</h3>
+                                <h3 class="howTo">Put on vibration table for 5 days at varying strength</h3>
                             </td>
-                            <td class="text-center"><img src="img/arduino-logo.png" alt="Arduino Logo"></td>
+                            <td class="text-center"><img src="img/vibration-table.png"
+                                    alt="Vibration table with petri dishes on top" class="img-fluid"></td>
                         </tr>
                         <tr class="align-middle">
                             <th scope="row" class="table-secondary">
                                 <h3>5</h3>
                             </th>
                             <td>
-                                <h3 class="howTo">Flask connects to Firebase and sends data for storage.</h3>
+                                <h3 class="howTo">Remeasure planaria, determine % growth</h3>
                             </td>
-                            <td class="text-center"><img src="img/firebase-logo.png" alt="Firebase logo"></td>
+                            <td class="text-center"><img src="img/planaria-measure-2.png"
+                                    alt="Petri dish containing planaria on top of ruler" class="img-fluid"></td>
                         </tr>
-
+                        <tr class="align-middle">
+                            <th scope="row" class="table-secondary">
+                                <h3>6</h3>
+                            </th>
+                            <td>
+                                <h3 class="howTo">Make pretty graphs with Python!</h3>
+                            </td>
+                            <td class="text-center"><img src="img/accel-graph.png" alt="Graph of acceleration vs. time"
+                                    class="img-fluid"></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -127,7 +144,7 @@
 
         <footer class="p-5 footer text-light text-center position-relative">
             <div class="container">
-                <p class="lead">Copyright &copy; SE 2025 Bootstrap demo</p>
+                <p class="lead">Copyright &copy; 2025: Alex Mazurczyk / High Technology High School</p>
                 <a href="#" class="position-absolute bottom-0 end-0 p-5">
                     <i class="bi bi-arrow-up-circle h2 icon-white"></i>
                 </a>
