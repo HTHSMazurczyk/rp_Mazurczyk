@@ -7,6 +7,8 @@
     padding-left: 40px;
 }
 
-#procedure-tbl tr td:last-child {
-    width: 25%;
+
+.my-image-class-pls-work {
+    width: 9vw;
+    min-width: 75px;
 }
