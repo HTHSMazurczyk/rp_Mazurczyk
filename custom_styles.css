@@ -10,3 +10,10 @@
 #procedure-tbl tr td:last-child {
     width: 25%;
 }
+
+@media (min-width: 1400px) {
+    .lg-bp-3-columns>* {
+        flex: 0 0 auto;
+        width: 33.33%
+    }
+}
