@@ -1,6 +1,17 @@
 #site-icon {
     max-height: 100px;
-    width: auto;
+    width: 50%;
+    transition: all 0.25s ease-in-out;
+    /* original */
+    /* aspect-ratio: 2.577 / 1; */
+    height: 100%;
+}
+
+#site-icon:hover {
+    transform: scaleX(1.1) translateX(5%);
+    /* width: 60%; */
+    /* maintain height */
+    /* aspect-ratio: 3.7066 / 1; */
 }
 
 .ov-bullet-pad-left {
