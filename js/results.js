@@ -4,11 +4,12 @@
 // Objective: load and process data from ../data/summative.csv, then plot it
 
 const getData = async () => {
-  try {
-    const response = await fetch('../data/summative.csv')
-  } catch (err) {
-    console.log(`Got error ${err}!\nTrying again differently`)
-    const response = await fetch('data/summative.csv')
+  let response = await fetch('../data/summative.csv')
+  if (!response.ok) {
+    console.log(
+      `Got Network error with ${response.status}!\nTrying again differently`
+    )
+    response = await fetch('data/summative.csv')
   }
   const rawData = await response.text()
 
