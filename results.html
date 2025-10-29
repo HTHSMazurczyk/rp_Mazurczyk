@@ -18,6 +18,7 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/results.js" defer></script>
 </head>
 
 <body>
@@ -53,12 +54,9 @@
     </div>
   </nav>
 
-  <div class="container">
-    <br /><br />
-    <h1 class="text-center">Website still under development!</h1>
-    <br />
-    <h2 class="text-center"><a href="index.html">Go back home</a></h2>
-  </div>
+  <section class="container d-flex bg-light rounded-4" id="chart-wrapper">
+    <canvas id="barChart"></canvas>
+  </section>
 
   <footer class="p-5 footer text-light text-center position-fixed bottom-0 w-100">
     <div class="container">
