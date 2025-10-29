@@ -64,9 +64,7 @@ const createChart = async () => {
         title: {
           display: true,
           text: 'The Change in Length of the Cut Planaria After the Trial',
-        },
-        legend: {
-          display: false,
+          font: { size: 24 },
         },
       },
     },
