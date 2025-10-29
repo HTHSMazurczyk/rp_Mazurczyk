@@ -12,7 +12,6 @@ const getData = async () => {
   let rows = rawData.split('\n')
   data.categories = rows[0].split(',').slice(1, 5)
   data.means = rows[1].split(',').slice(1)
-  data.stds = rows[2].split(',').slice(1) // standard deviations
 
   console.log(data)
   return data

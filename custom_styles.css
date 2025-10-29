@@ -25,9 +25,18 @@
 }
 
 #chart-wrapper {
-    margin: 2em auto;
-    width: 60%;
+    width: 100%;
 }
+
+#chart-with-text {
+    margin: 2em auto;
+    width: 70%;
+}
+
+#chart-with-text {
+    text-align: center;
+}
+
 
 
 @media (min-width: 1400px) {
